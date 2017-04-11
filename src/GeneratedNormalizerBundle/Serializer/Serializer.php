@@ -1,10 +1,10 @@
 <?php
 
-namespace Podorozhny\GeneratedNormalizer\Serializer;
+namespace Podorozhny\GeneratedNormalizerBundle\Serializer;
 
 use Doctrine\Common\Proxy\Proxy;
 use Doctrine\Common\Util\ClassUtils;
-use Podorozhny\GeneratedNormalizer\Serializer\Normalizer\NormalizerGeneratorInterface;
+use Podorozhny\GeneratedNormalizerBundle\Serializer\Normalizer\NormalizerGeneratorInterface;
 use Symfony\Component\Serializer\Normalizer\NormalizerAwareInterface;
 use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
 use Symfony\Component\Serializer\Serializer as BaseSerializer;

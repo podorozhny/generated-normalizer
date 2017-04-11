@@ -1,8 +1,8 @@
 <?php
 
-namespace Podorozhny\GeneratedNormalizer\DependencyInjection;
+namespace Podorozhny\GeneratedNormalizerBundle\DependencyInjection;
 
-use Podorozhny\GeneratedNormalizer\Serializer\Serializer;
+use Podorozhny\GeneratedNormalizerBundle\Serializer\Serializer;
 use Symfony\Component\Config\Definition\Processor;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Podorozhny\GeneratedNormalizer\DependencyInjection;
+namespace Podorozhny\GeneratedNormalizerBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

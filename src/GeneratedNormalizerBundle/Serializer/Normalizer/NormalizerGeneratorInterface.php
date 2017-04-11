@@ -1,6 +1,6 @@
 <?php
 
-namespace Podorozhny\GeneratedNormalizer\Serializer\Normalizer;
+namespace Podorozhny\GeneratedNormalizerBundle\Serializer\Normalizer;
 
 use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
 

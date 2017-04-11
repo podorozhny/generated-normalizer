@@ -1,6 +1,6 @@
 services:
     podorozhny_generated_normalizer.generator:
-        class: Podorozhny\GeneratedNormalizer\Serializer\Normalizer\NormalizerGenerator
+        class: Podorozhny\GeneratedNormalizerBundle\Serializer\Normalizer\NormalizerGenerator
         # TODO: use bundle configuration
         arguments:
             - '@templating'
