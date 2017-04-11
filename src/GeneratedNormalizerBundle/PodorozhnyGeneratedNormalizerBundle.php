@@ -1,6 +1,6 @@
 <?php
 
-namespace Podorozhny\GeneratedNormalizer;
+namespace Podorozhny\GeneratedNormalizerBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
