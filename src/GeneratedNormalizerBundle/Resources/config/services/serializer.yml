@@ -1,0 +1,8 @@
+services:
+    podorozhny_generated_normalizer.generator:
+        class: Podorozhny\GeneratedNormalizer\Serializer\Normalizer\NormalizerGenerator
+        # TODO: use bundle configuration
+        arguments:
+            - '@templating'
+            - '%kernel.cache_dir%'
+            - '@serializer.mapping.class_metadata_factory'

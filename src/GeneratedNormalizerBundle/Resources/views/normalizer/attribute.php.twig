@@ -1,0 +1,19 @@
+$groups = [];
+
+{% for group in attribute.groups %}
+    $groups[] = '{{ group }}';
+{% endfor %}
+
+if (array_key_exists(ObjectNormalizer::GROUPS, $context) &&
+    count(array_intersect($groups, $context[ObjectNormalizer::GROUPS])
+) > 0) {
+    {% if attribute.scalar %}
+        $result['{{ attribute.name }}'] = $object->{{ attribute.method_name }}();
+    {% else %}
+        $result['{{ attribute.name }}'] = $this->normalizer->normalize(
+            $object->{{ attribute.method_name }}(),
+            $format,
+            $context
+        );
+    {% endif %}
+}

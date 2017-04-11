@@ -1,0 +1,38 @@
+<?php
+
+namespace {{ normalizer_namespace }};
+
+use Symfony\Component\Serializer\Normalizer\NormalizerAwareInterface;
+use Symfony\Component\Serializer\Normalizer\NormalizerAwareTrait;
+use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
+use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
+use {{ object_full_class_name }};
+
+class {{ normalizer_class_name }} implements NormalizerInterface, NormalizerAwareInterface
+{
+    use NormalizerAwareTrait;
+
+    /**
+     * {{ '{@inheritdoc}' }}
+     */
+    public function normalize($object, $format = null, array $context = [])
+    {
+        /** @var {{ object_class_name }} $object */
+
+        $result = [];
+
+        {%- for attribute in attributes -%}
+            {%- include '@PodorozhnyGeneratedNormalizer/normalizer/attribute.php.twig' -%}
+        {%- endfor -%}
+
+        return $result;
+    }
+
+    /**
+     * {{ '{@inheritdoc}' }}
+     */
+    public function supportsNormalization($data, $format = null)
+    {
+        return $data instanceof {{ object_class_name }};
+    }
+}

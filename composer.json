@@ -1,0 +1,44 @@
+{
+    "name":         "podorozhny/generated-normalizer",
+    "description":  "Fast Generated Object Normalizer for PHP",
+    "type":         "library",
+    "license":      "MIT",
+    "homepage":     "https://github.com/podorozhny/generated-normalizer",
+    "keywords":     [
+        "symfony",
+        "serializer",
+        "normalizer",
+        "performance"
+    ],
+    "authors":      [
+        {
+            "name":  "Ivan Podorozhny",
+            "email": "ivan@podorozhny.ru"
+        }
+    ],
+    "require":      {
+        "php": "^7.0",
+        "symfony/http-kernel": "^3.2",
+        "symfony/serializer": "^3.2",
+        "doctrine/common": "^2.7",
+        "symfony/templating": "^3.2",
+        "symfony/config": "^3.2",
+        "symfony/dependency-injection": "^3.2",
+        "symfony/finder": "^3.2"
+    },
+    "autoload":     {
+        "psr-4": {
+            "Podorozhny\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra":        {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}
