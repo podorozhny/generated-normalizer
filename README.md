@@ -11,3 +11,5 @@ Made for [Symfony Serializer](https://github.com/symfony/serializer), inspired b
 
 * Tests + CI
 * Split bundle and component?
+* Do not generate in production
+* Composer generated normalizers autoloading
